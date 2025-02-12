@@ -1,0 +1,77 @@
+html,
+body {
+    width: 400px;
+    background-color: #1e1e1e;
+    color: rgba(217, 245, 255, 0.862);
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+h1{
+    font-size: 1.5em;
+    color: white;
+}
+
+p{
+    font-size: 1em;
+}
+
+strong{
+    font-weight: 900;
+    font-size: 1.2em;
+    text-decoration: underline;
+    text-decoration-color: #007acc;
+}
+#row-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+#button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#statusMessage{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+
+}
+button {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 8%;
+    cursor: pointer;
+    background-color: #3e3e42;
+}
+
+button:hover {
+    background-color: #007acc;
+}
+
+button[type="reset"] {
+    color: white;
+    background-color: darkred;
+}
+
+button[type="reset"]:hover {
+    background-color: red;
+}

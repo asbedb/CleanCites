@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CleanCites</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <container id="row-container">
+            <span>
+                <h1>
+                    CleanCites
+                </h1>
+                <p>
+                    Looks for citations in the below format<br/>
+                    <strong>("text", "text or date")</strong> <br/>
+                    and helps hide or highlight them making your journal article reading process more enjoyable.
+                </p>
+            </span>
+            <container id="button-container">
+                <button id="highlightButton">Highlight Citations</button>
+                <button id="hideButton">Hide Citations</button>
+            </container>
+            <a href='https://ko-fi.com/J3J81AGC23' target='_blank'>
+                <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=6'alt='Buy Me a Coffee at ko-fi.com' />
+            </a>
+            <p id="statusMessage"></p>
+        </container>
+
+        <script src="cleancites.js"></script>
+    </body>
+</html>
