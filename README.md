@@ -1,7 +1,3 @@
-Here’s a basic README template for your **CleanCites** project, which you can customize and expand based on your needs:
-
----
-
 # CleanCites
 
 **CleanCites** is a simple Firefox/Chromium extension designed to help you hide or highlight citations in browser-based scientific journals. Whether you're trying to declutter your reading experience or focus on references, CleanCites makes it easier to control how citations appear while browsing academic papers.
@@ -55,7 +51,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to the open-source community for their contributions to web extensions.
 - Special thanks to the developers of Firefox and Chromium for their extensive extension APIs.
-
----
-
-You can modify the placeholders like the installation links (`#`) and add more specific details as you develop your project further! Does this look good to you, or would you like any changes?
