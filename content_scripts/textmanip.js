@@ -1,4 +1,5 @@
 // Improved regex pattern for partial matches
+//TODO: Implement a regex dictionary option which allows for different citation standards.
 const citationPattern = /\([A-Z][a-zA-Z]+(?:,| et al.,)?\s*(?:\d{4})?/;
 
 // Store original content for restoration
