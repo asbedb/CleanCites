@@ -1,7 +1,3 @@
-// Improved regex pattern for partial matches
-//TODO: Implement a regex dictionary option which allows for different citation standards.
-const citationPattern = /\([A-Z][a-zA-Z]+(?:,| et al.,)?\s*(?:\d{4})?/;
-
 // Store original content for restoration
 let originalContent = new WeakMap();
 
@@ -141,9 +137,26 @@ function processParagraphHideShowCitations(paragraph, shouldHide) {
 }
 
 function isCitation(block) {
-    const plainText = block.replace(/<[^>]+>/g, '');
-    return citationPattern.test(plainText);
+    const plainText = block.replace(/<[^>]+>/g, '');  // Remove HTML tags
+
+
+    // Check if it contains a year in parentheses (e.g., (2021))
+    const hasYear = /^\(\d{4}\)$/.test(plainText);
+
+    // Check for author-year format: "Author, A. (YYYY)"
+    const hasAuthorYear = /^[A-Za-z\s&]+, [A-Za-z]\. \(\d{4}\)$/.test(plainText);
+
+    // Check for citation patterns with journal names or volume/page info
+    const hasVolumePagePattern = /\d{1,4}(\s*,\s*\d{1,4}[-–]?\d{1,4})?(\s*(pp?\.\s*\d{1,4}[-–]?\d{1,4})?)/g.test(plainText);
+
+    //min 5 letter words, does not start with e.g., see
+    const hasJournalName = /^(?!e\.g\.)(?!see)[A-Z][a-zA-Z\s]{4,}/.test(plainText);
+
+    // Combine the conditions: A valid citation must match one of the patterns and should not be generic
+    return hasAuthorYear || hasYear || hasJournalName || hasVolumePagePattern;
 }
+
+
 
 // Performance monitoring
 const observer = new PerformanceObserver((list) => {
