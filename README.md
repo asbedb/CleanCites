@@ -11,7 +11,7 @@
 ## Installation
 
 ### Firefox:
-Visit the officiall [Plugin Page](https://addons.mozilla.org/en-US/firefox/addon/cleancites/)
+Visit the official [Plugin Page](https://addons.mozilla.org/en-US/firefox/addon/cleancites/)
 
 ### Chrome/Chromium:
 1. Download the [CleanCites Extension ZIP](https://github.com/asbedb/CleanCites/archive/refs/heads/main.zip).
@@ -21,7 +21,8 @@ Visit the officiall [Plugin Page](https://addons.mozilla.org/en-US/firefox/addon
 
 ## Usage
 
-- **Activate/Deactivate**: Click the extension icon in the toolbar to toggle hiding or highlighting of citations.
+- **Hide/Unhide**: Hiding or showing citations
+- **Highlight/Remove Highlightes**: Highlighting or Removing Highlights of citations.
 
 ## Citation Standards
 
