@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "CleanCites",
-    "version": "1.0",
+    "version": "1.1",
     "description": "A simple Firefox/Chromium extension to help hide or highlight citations in browser based scientific journals.",
 
     "icons": {
