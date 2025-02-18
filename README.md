@@ -29,7 +29,7 @@ Visit the official [Plugin Page](https://addons.mozilla.org/en-US/firefox/addon/
 - Check if it contains a year in parentheses (e.g., (2021))
 - Check for author-year format: "Author, A. (YYYY)"
 - Check for citation patterns with journal names or volume/page info
-- Min 5 letter words, ensures bracketted text does not start with e.g. or see.
+- Min 5 letter words, ensures bracketed text does not start with e.g. or see.
 
 ## Acknowledgements
 
